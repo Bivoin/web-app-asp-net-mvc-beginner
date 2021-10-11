@@ -1,0 +1,33 @@
+﻿@using Market.Models
+@model List<Market.Models.Product>
+
+@Html.ActionLink("Добавить запись", "Create", "Products")
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Цена</th>
+            <th>В наличии</th>
+            <th>Страна</th>
+            <th>Дата следующего поступления</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+        <tr>
+            <td>@product.Name</td>
+            <td>@product.Price</td>
+            <td>@product.NumberOfProducts</td>
+            <td>@product.Country</td>
+            <td>@product.NextArrivalDate</td>
+            <td>
+                @Html.ActionLink("Удалить", "Delete", "Products", new { id = product.Id }, new { })
+                @Html.ActionLink("Изменить", "Edit", "Products", new { id = product.Id }, new { })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

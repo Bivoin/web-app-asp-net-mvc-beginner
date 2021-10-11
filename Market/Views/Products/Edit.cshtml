@@ -1,0 +1,10 @@
+﻿@using Market.Models;
+@model Product
+
+@using (Html.BeginForm("Edit", "Products", FormMethod.Post))
+{
+    @Html.ValidationSummary();
+    @Html.EditorForModel()
+    <input type="submit" value="Сохранить" />
+    @Html.ActionLink("Отменить", "Index", "Products")
+}
