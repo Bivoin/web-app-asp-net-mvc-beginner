@@ -87,5 +87,5 @@ C:\Users\Wuntila\source\repos\Market\Market\bin\ru\System.Web.WebPages.Deploymen
 C:\Users\Wuntila\source\repos\Market\Market\bin\ru\System.Web.WebPages.Razor.resources.dll
 C:\Users\Wuntila\source\repos\Market\Market\obj\Debug\Market.dll
 C:\Users\Wuntila\source\repos\Market\Market\obj\Debug\Market.pdb
-C:\Users\Wuntila\source\repos\Market\Market\obj\Debug\Market.Migrations._22345.resources
+C:\Users\Wuntila\source\repos\Market\Market\obj\Debug\Market.Migrations.update131515102021.resources
 C:\Users\Wuntila\source\repos\Market\Market\obj\Debug\Market.csproj.GenerateResource.cache

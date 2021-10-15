@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 using Market.Models;
@@ -28,7 +29,9 @@ namespace Market.Controllers
         {
             if (!ModelState.IsValid)
                 return View(model);
+
             var db = new MarketContext();
+            model.CreateAt = DateTime.Now;
 
             db.Products.Add(model);
             db.SaveChanges();
@@ -70,13 +73,12 @@ namespace Market.Controllers
             var product = db.Products.FirstOrDefault(x => x.Id == model.Id);
             if (product == null)
             {
-                ModelState.AddModelError("Id", "Книга не найдена");
+                ModelState.AddModelError("Id", "Продукт не найден");
             }
             if (!ModelState.IsValid)
                 return View(model);
 
             MappingProduct(model, product);
-
 
             db.Entry(product).State = EntityState.Modified;
             db.SaveChanges();

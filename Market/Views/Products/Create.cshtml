@@ -1,6 +1,8 @@
 ﻿@using Market.Models;
 @model Product
 
+<h3>Продукт</h3>
+
 @using (Html.BeginForm("Create", "Products", FormMethod.Post))
 {
     @Html.EditorForModel()
