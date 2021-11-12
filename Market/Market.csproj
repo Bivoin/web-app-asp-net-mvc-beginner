@@ -131,9 +131,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202110150318374_update131515102021.cs" />
-    <Compile Include="Migrations\202110150318374_update131515102021.designer.cs">
-      <DependentUpon>202110150318374_update131515102021.cs</DependentUpon>
+    <Compile Include="Migrations\202111110250192_init1.cs" />
+    <Compile Include="Migrations\202111110250192_init1.designer.cs">
+      <DependentUpon>202111110250192_init1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MarketContext.cs" />
@@ -194,8 +194,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202110150318374_update131515102021.resx">
-      <DependentUpon>202110150318374_update131515102021.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111110250192_init1.resx">
+      <DependentUpon>202111110250192_init1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

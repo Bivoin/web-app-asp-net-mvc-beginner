@@ -7,13 +7,13 @@ namespace Market.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class update131515102021 : IMigrationMetadata
+    public sealed partial class init1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(update131515102021));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202110150318374_update131515102021"; }
+            get { return "202111110250192_init1"; }
         }
         
         string IMigrationMetadata.Source
